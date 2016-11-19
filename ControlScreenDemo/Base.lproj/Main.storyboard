@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6PD-sB-SLo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="BdC-Mc-Syi">
+            <objects>
+                <viewController id="s1K-dl-UJz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qQC-6s-I8Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="cDK-CU-r9c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HI8-vC-nNf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqR-MN-iVX">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="不能旋转，只能竖屏"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Add-5v-alN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uqR-MN-iVX" firstAttribute="centerX" secondItem="HI8-vC-nNf" secondAttribute="centerX" id="5Ie-8A-FAe"/>
+                            <constraint firstItem="uqR-MN-iVX" firstAttribute="centerY" secondItem="HI8-vC-nNf" secondAttribute="centerY" id="Eqn-p9-ni5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="y81-2m-HJa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yrj-Ht-dGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1468" y="-523"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不能旋转，只能竖屏" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHH-jD-5jP">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqI-fW-bl4">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="关闭页面"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nfh-bC-dcM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MHH-jD-5jP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F1O-ZO-kZu"/>
+                            <constraint firstItem="gqI-fW-bl4" firstAttribute="centerX" secondItem="MHH-jD-5jP" secondAttribute="centerX" id="FlW-ld-mPg"/>
+                            <constraint firstItem="MHH-jD-5jP" firstAttribute="top" secondItem="gqI-fW-bl4" secondAttribute="bottom" constant="20" id="WX8-6n-hrS"/>
+                            <constraint firstItem="MHH-jD-5jP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b6Q-bR-ild"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tul-5A-km1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2674" y="-523"/>
+        </scene>
+        <!--Root Tab Bar Controller-->
+        <scene sceneID="CUR-bZ-Rga">
+            <objects>
+                <tabBarController id="6PD-sB-SLo" customClass="RootTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="hV4-Ug-Igd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lai-MR-gQI" kind="relationship" relationship="viewControllers" id="MRA-Hv-IAF"/>
+                        <segue destination="B47-HW-cN3" kind="relationship" relationship="viewControllers" id="lwu-MI-IUn"/>
+                        <segue destination="pgJ-Kd-MUA" kind="relationship" relationship="viewControllers" id="dwL-tw-JvC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vgT-QX-5Sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1391" y="322"/>
+        </scene>
+        <!--item-->
+        <scene sceneID="GcL-zy-LCl">
+            <objects>
+                <navigationController id="lai-MR-gQI" customClass="ControlScreenNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="item" id="i0S-S0-QwH"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dWB-nV-pN3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="s1K-dl-UJz" kind="relationship" relationship="rootViewController" id="gZk-tC-Mk4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ca4-Ay-bgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="-522"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="zbZ-3G-KlA">
+            <objects>
+                <viewController id="VIh-iO-igH" customClass="ViewController2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xIz-eK-ybV"/>
+                        <viewControllerLayoutGuide type="bottom" id="ePI-n2-jRj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MBb-Pl-sNO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不能旋转，只能横屏" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nZ-mU-EnW">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2b-ue-bd0">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="关闭页面"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="VIh-iO-igH" eventType="touchUpInside" id="moK-Hs-8EH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x2b-ue-bd0" firstAttribute="centerX" secondItem="7nZ-mU-EnW" secondAttribute="centerX" id="ATT-UN-MT0"/>
+                            <constraint firstItem="7nZ-mU-EnW" firstAttribute="centerY" secondItem="MBb-Pl-sNO" secondAttribute="centerY" id="FKd-H4-bch"/>
+                            <constraint firstItem="7nZ-mU-EnW" firstAttribute="top" secondItem="x2b-ue-bd0" secondAttribute="bottom" constant="20" id="Jf5-Db-CU1"/>
+                            <constraint firstItem="7nZ-mU-EnW" firstAttribute="centerX" secondItem="MBb-Pl-sNO" secondAttribute="centerX" id="doN-km-ymg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="T7Z-SF-WpN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ylm-nW-H6J" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2674" y="321"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="aAU-Xf-C9H">
+            <objects>
+                <navigationController id="B47-HW-cN3" customClass="ControlScreenNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="io8-5Q-UY8"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TZv-JT-tA5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zJs-ma-AlJ" kind="relationship" relationship="rootViewController" id="9a3-ty-nzg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Vs-eC-dkD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="322"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="7KQ-q1-drz">
+            <objects>
+                <viewController id="bc9-Nf-T0x" customClass="ViewController3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="myc-SX-EZe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nit-1L-8Cn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W3O-XZ-iop">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可以旋转，可以横屏，也可以竖屏" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bu8-2h-zEF">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgV-Zr-z4q">
+                                <state key="normal" title="关闭页面"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="bc9-Nf-T0x" eventType="touchUpInside" id="Hiv-UF-g8z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xgV-Zr-z4q" firstAttribute="centerX" secondItem="Bu8-2h-zEF" secondAttribute="centerX" id="MGZ-Zg-YnX"/>
+                            <constraint firstItem="Bu8-2h-zEF" firstAttribute="top" secondItem="xgV-Zr-z4q" secondAttribute="bottom" constant="20" id="r2i-Ap-5dW"/>
+                            <constraint firstItem="Bu8-2h-zEF" firstAttribute="centerX" secondItem="W3O-XZ-iop" secondAttribute="centerX" id="sm2-cu-ZVR"/>
+                            <constraint firstItem="Bu8-2h-zEF" firstAttribute="centerY" secondItem="W3O-XZ-iop" secondAttribute="centerY" id="xvR-xj-nUu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="98t-hQ-8ga"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IIv-X7-RK0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2674" y="1181"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="2VP-ar-nv1">
+            <objects>
+                <navigationController id="pgJ-Kd-MUA" customClass="ControlScreenNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="UT5-KL-gBH"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="87x-9n-01e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IMt-Wt-SmN" kind="relationship" relationship="rootViewController" id="9SD-02-GlY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bu1-qS-587" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="1182"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ABL-YT-f8B">
+            <objects>
+                <viewController id="zJs-ma-AlJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pno-iJ-O1R"/>
+                        <viewControllerLayoutGuide type="bottom" id="ajy-vj-jcK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uR8-F9-P65">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WU-TO-Vhz">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="不能旋转，只能横屏"/>
+                                <connections>
+                                    <segue destination="VIh-iO-igH" kind="presentation" id="fag-OV-kcO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4WU-TO-Vhz" firstAttribute="centerY" secondItem="uR8-F9-P65" secondAttribute="centerY" id="aKB-aB-ABU"/>
+                            <constraint firstItem="4WU-TO-Vhz" firstAttribute="centerX" secondItem="uR8-F9-P65" secondAttribute="centerX" id="gJv-ZT-ooz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ah0-Wp-Ngj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXu-Pe-0Pu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1468" y="322"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4Rq-Dc-dnl">
+            <objects>
+                <viewController id="IMt-Wt-SmN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="efW-ae-1kf"/>
+                        <viewControllerLayoutGuide type="bottom" id="KIY-Tf-gje"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uih-q0-HJK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ir0-Dp-5Dy">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="可以旋转，可以横屏，也可以竖屏"/>
+                                <connections>
+                                    <segue destination="bc9-Nf-T0x" kind="presentation" id="ajY-hZ-8fQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ir0-Dp-5Dy" firstAttribute="centerX" secondItem="Uih-q0-HJK" secondAttribute="centerX" id="aYO-Uh-TNV"/>
+                            <constraint firstItem="Ir0-Dp-5Dy" firstAttribute="centerY" secondItem="Uih-q0-HJK" secondAttribute="centerY" id="nNp-Im-9d4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ieo-f2-lJF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oxt-ao-HyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1468" y="1182"/>
+        </scene>
+    </scenes>
+</document>
